@@ -9,20 +9,16 @@
 #include <Adafruit_SSD1306.h>  // Memanggil Library OLED SSD1306
 #include <string.h>
 
-#define FIREBASE_HOST "https://water-monitoring-system-efc37-default-rtdb.firebaseio.com//"  //untuk database realtime
-#define FIREBASE_AUTH "4shKYwmp8Yn1lv4hKbBjBYUJFdVkl8k44rRJwlay"                             // untuk token database secrets
+#define FIREBASE_HOST ""  //untuk database realtime
+#define FIREBASE_AUTH ""  // untuk token database secrets
 FirebaseData firebaseData;
 FirebaseAuth firebaseAuth;
 FirebaseConfig firebaseConfig;
 //===========WiFi credentials==================
-//******Wifi Perikanan
-// const char* ssid = "ZTE-d2a67a";    // change SSID
-// const char* password = "d476ead2";  // change password
-//******Wifi Kos
-const char* ssid = "Berkah 2";    // change SSID
-const char* password = "SELALUBERK4H";  // change password
+const char* ssid = "";    // change SSID
+const char* password = "";  // change password
 //  Google script ID and required credentials
-String GOOGLE_SCRIPT_ID = "AKfycbwBzegoAYGqQPiq8omNopYfo1aUfu0s6r5MNaKFxK8SAFHx8HUCLHj_7Qq7PMGbsrX3";  // change Gscript ID
+String GOOGLE_SCRIPT_ID = "";  // change Gscript ID
 
 // Constants for pH sensor
 DFRobot_ESP_PH ph;
